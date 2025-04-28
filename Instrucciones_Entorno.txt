@@ -1,0 +1,15 @@
+Para preparar el entorno adecuadamente se debe disponer de DOCKER.
+
+Descargar el repositorio completo desde GitHub.
+
+Con Docker instalado se procede a ubicar la terminal de Windows (CMD) en el directorio descargado.
+
+Se procede a componer a través del archivo COMPOSE.
+
+la línea de comando es:
+
+# docker-compose up -d
+
+Se recomienda realizarlo desde Visual Studio Code.
+
+Para mayor flexibilidad y manejo en cuanto a código.
