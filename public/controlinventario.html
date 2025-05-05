@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Inventario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #0073e6;
+            color: white;
+        }
+        button {
+            padding: 8px;
+            margin-top: 10px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Control de Inventario</h1>
+    </header>
+
+    <section>
+        <h2>Lista de Insumos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Teclados</td>
+                    <td>20</td>
+                    <td><button onclick="editar()">Editar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ratones</td>
+                    <td>15</td>
+                    <td><button onclick="editar()">Editar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button onclick="agregar()">Agregar Insumo</button>
+    </section>
+
+    <script>
+        function agregar() {
+            alert("Función para agregar un nuevo insumo.");
+        }
+
+        function editar() {
+            alert("Función para editar un insumo existente.");
+        }
+    </script>
+
+</body>
+</html>
